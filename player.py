@@ -1,12 +1,8 @@
-"""
-This class will be called if a character can't be loaded at the beginning of
-execution, or if we need to modify the current character
-"""
+import sys
+import os
 
-class PlayerBasic():
+class Player():
 
-
-
-class PlayerAbilities():
-
+    def __init__(self):
+        print 'Player class placeholder'
 
