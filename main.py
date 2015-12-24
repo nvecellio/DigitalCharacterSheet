@@ -75,5 +75,17 @@ class Main():
         """.format(name=name))
         choice = raw_input('>> ')
 
-        return choice
+        try:
+            value = int(choice)
+            return value
+        except ValueError:
+            pass
+            while type(choice) != int:
+                print "You have not entered a number, please try again"
+                choice = raw_input(">> Please select an option...")
+                try:
+                    value = int(choice)
+                    return value
+                except:
+                    pass
 
